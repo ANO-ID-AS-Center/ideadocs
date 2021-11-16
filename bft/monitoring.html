@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Мониторинг | Blockchain Docs</title>
+    <meta name="description" content="Just writing docs.">
+    <link rel="stylesheet" href="/assets/style.b4da65ae.css">
+    <link rel="modulepreload" href="/assets/Home.e8244886.js">
+    <link rel="modulepreload" href="/assets/app.2c9d185c.js">
+    <link rel="modulepreload" href="/assets/bft_monitoring.md.5a2ee1f5.lean.js">
+    <link rel="modulepreload" href="/assets/app.2c9d185c.js">
+    <meta name="twitter:title" content="Мониторинг | Blockchain Docs">
+    <meta property="og:title" content="Мониторинг | Blockchain Docs">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-40587210><div class="sidebar-button" data-v-40587210><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="Blockchain Docs, back to home" data-v-40587210 data-v-7ac13a1e><!----> Blockchain Docs</a><div class="flex-grow" data-v-40587210></div><div class="nav" data-v-40587210><nav class="nav-links" data-v-40587210 data-v-35b91e7e><!--[--><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item" href="/" data-v-49fe041d>Guide <!----></a></div></div><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item" href="/elk/intro" data-v-49fe041d>ELK <!----></a></div></div><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item active" href="/bft/intro" data-v-49fe041d>BFT <!----></a></div></div><!--]--><!----><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item isExternal" href="https://github.com/ANO-ID-AS-Center/ideadocs" target="_blank" rel="noopener noreferrer" data-v-49fe041d>GitHub <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-49fe041d><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div></nav></div><!--[--><!--]--></header><aside class="sidebar" data-v-17c48e2f><nav class="nav-links nav" data-v-17c48e2f data-v-35b91e7e><!--[--><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item" href="/" data-v-49fe041d>Guide <!----></a></div></div><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item" href="/elk/intro" data-v-49fe041d>ELK <!----></a></div></div><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item active" href="/bft/intro" data-v-49fe041d>BFT <!----></a></div></div><!--]--><!----><div class="item" data-v-35b91e7e><div class="nav-link" data-v-35b91e7e data-v-49fe041d><a class="item isExternal" href="https://github.com/ANO-ID-AS-Center/ideadocs" target="_blank" rel="noopener noreferrer" data-v-49fe041d>GitHub <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-49fe041d><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div></nav><!--[--><!--]--><ul class="sidebar-links" data-v-17c48e2f><!--[--><li class="sidebar-link"><p class="sidebar-link-item">Создание стенда с BFT</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/bft/intro">Введение</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/bft/fabric">Разворачивание Fabric</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/bft/load-test">Нагрузочный инструмент</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item active" href="/bft/monitoring">Мониторинг</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#docker-compose">Docker Compose</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#prometheus-yaml">prometheus.yaml</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#datasource-yaml">datasource.yaml</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#изменения-в-запуске-фабрики">Изменения в запуске фабрики</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="/bft/flamegraphs">Флеймграфы</a><!----></li></ul></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-8fcebc32><div class="container" data-v-8fcebc32><!--[--><!--]--><div style="position:relative;" class="content" data-v-8fcebc32><div><h1 id="мониторинг" tabindex="-1">Мониторинг <a class="header-anchor" href="#мониторинг" aria-hidden="true">#</a></h1><p>Для отслеживания работы фабрики мы воспользовались Prometheus и Grafana, в данной секции подробнее расскажем, как его настроить, например в новом проекте.</p><h2 id="docker-compose" tabindex="-1">Docker Compose <a class="header-anchor" href="#docker-compose" aria-hidden="true">#</a></h2><p>Ниже приведен пример докер-компоуз файла, использованного в тестовом стенде</p><div class="language-yaml"><pre><code><span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">prometheus</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> prom/prometheus<span class="token punctuation">:</span>latest
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> prometheus
+    <span class="token key atrule">hostname</span><span class="token punctuation">:</span> prometheus
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+    <span class="token key atrule">tty</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./prometheus.yml<span class="token punctuation">:</span>/etc/prometheus/prometheus.yml
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 9090<span class="token punctuation">:</span><span class="token number">9090</span>
+    <span class="token key atrule">extra_hosts</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer2.example.com:104.248.203.58&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer3.example.com:134.209.84.187&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer4.example.com:142.93.226.97&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer0.org1.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer1.org1.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer0.org2.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer1.org2.example.com:188.166.61.6&quot;</span>
+
+  <span class="token key atrule">grafana</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> grafana/grafana<span class="token punctuation">:</span>latest
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> grafana
+    <span class="token key atrule">hostname</span><span class="token punctuation">:</span> grafana
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> GF_AUTH_PROXY_ENABLED=true
+      <span class="token punctuation">-</span> GF_PATHS_PROVISIONING=/var/lib/grafana/provisioning/
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./provisioning/<span class="token punctuation">:</span>/var/lib/grafana/provisioning/
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 3000<span class="token punctuation">:</span><span class="token number">3000</span>
+    <span class="token key atrule">depends_on</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> prometheus
+    <span class="token key atrule">extra_hosts</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer2.example.com:104.248.203.58&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer3.example.com:134.209.84.187&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;orderer4.example.com:142.93.226.97&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer0.org1.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer1.org1.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer0.org2.example.com:188.166.61.6&quot;</span>
+      <span class="token punctuation">-</span> <span class="token string">&quot;peer1.org2.example.com:188.166.61.6&quot;</span>
+</code></pre></div><p>Т.е. мы запускаем два контейнера и пробрасываем порты <code>3000</code> и <code>9000</code> для графаны и прометеуса соответственно.</p><h3 id="prometheus-yaml" tabindex="-1">prometheus.yaml <a class="header-anchor" href="#prometheus-yaml" aria-hidden="true">#</a></h3><p>Для сбора метрик, мы используем файл конфигурации, где описано на какие IP адреса ходить и с каким интервалом получать метрики</p><div class="language-yaml"><pre><code><span class="token key atrule">global</span><span class="token punctuation">:</span>
+  <span class="token key atrule">scrape_interval</span><span class="token punctuation">:</span> 15s <span class="token comment"># Set the scrape interval to every 15 seconds. Default is every 1 minute.</span>
+  <span class="token key atrule">evaluation_interval</span><span class="token punctuation">:</span> 15s <span class="token comment"># Evaluate rules every 15 seconds. The default is every 1 minute.</span>
+
+<span class="token key atrule">alerting</span><span class="token punctuation">:</span>
+  <span class="token key atrule">alertmanagers</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span>
+          <span class="token comment"># - alertmanager:9093</span>
+
+<span class="token comment"># Load rules once and periodically evaluate them according to the global &#39;evaluation_interval&#39;.</span>
+<span class="token key atrule">rule_files</span><span class="token punctuation">:</span>
+<span class="token comment"># - &quot;first_rules.yml&quot;</span>
+<span class="token comment"># - &quot;second_rules.yml&quot;</span>
+
+<span class="token comment"># A scrape configuration containing exactly one endpoint to scrape:</span>
+<span class="token comment"># Here it&#39;s Prometheus itself.</span>
+<span class="token key atrule">scrape_configs</span><span class="token punctuation">:</span>
+  <span class="token comment"># The job name is added as a label `job=&lt;job_name&gt;` to any timeseries scraped from this config.</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;prometheus&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;localhost:9090&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;orderer&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;orderer.example.com:9445&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;orderer2&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;orderer2.example.com:9445&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;orderer3&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;orderer3.example.com:9445&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;orderer4&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;orderer4.example.com:9445&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;peer0_org1&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;peer0.org1.example.com:9441&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">&quot;peer0_org2&quot;</span>
+    <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;peer0.org2.example.com:9443&quot;</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="datasource-yaml" tabindex="-1">datasource.yaml <a class="header-anchor" href="#datasource-yaml" aria-hidden="true">#</a></h3><p>Помимо файла конфигурации Prometheus, нам также понадобятся дашборды графаны (готовые графики) и конфигурация источников данных, чтобы мы могли сразу видеть, как работает сеть. Конфигурацию дашбордов можно посмотреть по ссылке (TODO: Сделать ссылку на дашборд), а конфигурация источников приведена ниже:</p><div class="language-yaml"><pre><code><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> <span class="token number">1</span>
+
+<span class="token key atrule">deleteDatasources</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">&quot;Prometheus&quot;</span>
+    <span class="token key atrule">orgId</span><span class="token punctuation">:</span> <span class="token number">1</span>
+
+<span class="token key atrule">datasources</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> <span class="token string">&quot;Prometheus&quot;</span>
+    <span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">&quot;prometheus&quot;</span>
+    <span class="token key atrule">access</span><span class="token punctuation">:</span> <span class="token string">&quot;proxy&quot;</span>
+    <span class="token key atrule">orgId</span><span class="token punctuation">:</span> <span class="token number">1</span>
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token string">&quot;http://prometheus:9090&quot;</span>
+    <span class="token key atrule">isDefault</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token number">1</span>
+    <span class="token key atrule">editable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+</code></pre></div><h2 id="изменения-в-запуске-фабрики" tabindex="-1">Изменения в запуске фабрики <a class="header-anchor" href="#изменения-в-запуске-фабрики" aria-hidden="true">#</a></h2><p>Для того, чтобы фабрика отдавала метрики, нужно дополнительно передать в переменные окружения следующие параметры:</p><ul><li>Для ордерера:</li></ul><div class="language-bash"><pre><code><span class="token assign-left variable">ORDERER_METRICS_PROVIDER</span><span class="token operator">=</span>prometheus
+<span class="token assign-left variable">CORE_OPERATIONS_LISTENADDRESS</span><span class="token operator">=</span><span class="token number">0.0</span>.0.0:9443 <span class="token comment"># или любой другой порт</span>
+</code></pre></div><ul><li>Для пира:</li></ul><div class="language-bash"><pre><code><span class="token assign-left variable">CORE_METRICS_PROVIDER</span><span class="token operator">=</span>prometheus
+<span class="token assign-left variable">CORE_OPERATIONS_LISTENADDRESS</span><span class="token operator">=</span><span class="token number">0.0</span>.0.0:9441 <span class="token comment"># или любой другой порт</span>
+</code></pre></div></div></div><footer class="page-footer" data-v-8fcebc32 data-v-5c96fb00><div class="edit" data-v-5c96fb00><div class="edit-link" data-v-5c96fb00 data-v-55695e90><a class="link" href="https://github.com/ANO-ID-AS-Center/ideadocs/edit/master/bft/monitoring.md" target="_blank" rel="noopener noreferrer" data-v-55695e90>Edit this page on Github <svg class="icon outbound icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-55695e90><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><div class="updated" data-v-5c96fb00><p class="last-updated" data-v-5c96fb00 data-v-30c3cbb4><span class="prefix" data-v-30c3cbb4>Last Updated:</span><span class="datetime" data-v-30c3cbb4></span></p></div></footer><div class="next-and-prev-link" data-v-8fcebc32 data-v-e65a9748><div class="container" data-v-e65a9748><div class="prev" data-v-e65a9748><a class="link" href="/bft/load-test" data-v-e65a9748><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-e65a9748><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-e65a9748>Нагрузочный инструмент</span></a></div><div class="next" data-v-e65a9748><a class="link" href="/bft/flamegraphs" data-v-e65a9748><span class="text" data-v-e65a9748>Флеймграфы</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-next" data-v-e65a9748><path d="M19.9,12.4c0.1-0.2,0.1-0.5,0-0.8c-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l5.3,5.3H5c-0.6,0-1,0.4-1,1s0.4,1,1,1h11.6l-5.3,5.3c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l7-7C19.8,12.6,19.9,12.5,19.9,12.4z"></path></svg></a></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"bft_fabric.md\":\"1a63ec2e\",\"bft_flamegraphs.md\":\"09939337\",\"bft_intro.md\":\"64d76e53\",\"bft_load-test.md\":\"801ebdd6\",\"bft_monitoring.md\":\"5a2ee1f5\",\"elk_analysis.md\":\"44dcb00c\",\"elk_intro.md\":\"9e3b1793\",\"elk_sendlogs.md\":\"9d74d371\",\"elk_setup.md\":\"bd71bf96\",\"guide_addpage.md\":\"026967f9\",\"guide_addproject.md\":\"62cbd9b7\",\"guide_doc-for-project.md\":\"b5fff84c\",\"guide_globals.md\":\"b720895f\",\"guide_intro.md\":\"df58e53c\",\"guide_project-deploy.md\":\"84b24d65\",\"guide_project-first.md\":\"07c40e5e\",\"index.md\":\"6b6da3d3\"}")</script>
+    <script type="module" async src="/assets/app.2c9d185c.js"></script>
+    
+  </body>
+</html>
